@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      IonicArduBot
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <ion-range min="-255" max="255" [(ngModel)]="i" color="secondary" (ionBlur)="resetOnBlur()">
+      <ion-label range-left><</ion-label>
+      <ion-label range-right>></ion-label>
+    </ion-range>
+  </ion-item>
 </ion-content>
