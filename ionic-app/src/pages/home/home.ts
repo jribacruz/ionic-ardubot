@@ -17,7 +17,7 @@ export class HomePage {
   }
 
   resetOnBlur() {
-    this.i=0;
+    this.i = 0;
   }
 
 }

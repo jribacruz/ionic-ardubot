@@ -13,4 +13,10 @@
       <ion-label range-right>></ion-label>
     </ion-range>
   </ion-item>
+  <ion-item>
+    <ion-range min="-255" max="255" [(ngModel)]="i" color="secondary" (ionBlur)="resetOnBlur()" class="leftRightPad">
+      <ion-label range-left><</ion-label>
+      <ion-label range-right>></ion-label>
+    </ion-range>
+  </ion-item>
 </ion-content>
